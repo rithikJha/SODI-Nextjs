@@ -1,0 +1,83 @@
+.widget-card {
+    background-color: #1c1c1e;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    margin: 0.4rem;
+    max-width: 330px;
+    min-width: 277px;
+    max-height: 100%;
+    min-height: 400px;
+    transition: all 0.3s ease;
+  }
+  
+  .widget-card:hover {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+  }
+  
+  .widget-card-header {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .widget-card-header h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .widget-post-list {
+    max-width: 330px;
+    min-width: 330px;
+    max-height: 330px;
+    min-height: 340px;
+  }
+  
+  .widget-post-list .nthArticle {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+
+  
+  .widget-post-list img {
+    width: 95px;
+    height: 65px;
+    border-radius: 12px;
+    margin-right: 20px;
+  }
+  
+  .widget-post-list .nthArticle .article-date-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  
+  .widget-post-list .nthArticle .date {
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .widget-post-list .nthArticle p {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.4;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  
+  .widget-post-list .nthArticle:hover .article-date-title p {
+    color: #ff7fb9;
+  }
