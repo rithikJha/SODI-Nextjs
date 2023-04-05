@@ -1,7 +1,7 @@
 import React from 'react'
 import { getAllArticles, getOneArticle, getRecentPosts } from '@/services'
-import { ArticleDetails, ArticleWidget, ArticleCategories, Author } from '@/components'; 
-
+import { ArticleDetails, ArticleWidget, ArticleCategories, Author,Loader } from '@/components'; 
+import { useRouter } from 'next/router';
 const cats = [
     {
       name: "technology"
@@ -21,7 +21,10 @@ const cats = [
   ];
 
 const FullArticle = ({post, recent_posts}) => {
-    console.log('slug',post)
+    const router = useRouter();
+    if(router.isFallback){
+      return (<div><Loader /></div>)
+    }
   return (
     <div className ="details-page">
     <div className='article-area'>
@@ -57,7 +60,7 @@ export async function getStaticPaths() {
     console.log(all_Articles[0].slug)
     return {
         paths : all_Articles.map(({slug}) => ({params : {slug}})),
-        fallback:false,
+        fallback:true,
     }
 }
 

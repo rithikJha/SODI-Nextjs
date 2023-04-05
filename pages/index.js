@@ -6,7 +6,6 @@ import { Articles, ArticleCategories, ArticleWidget } from '@/components'
 import { getAllArticles, getRecentPosts } from '@/services'
 
 export default function Home({all_Articles , recent_Posts}) {
-  console.log('home : ',all_Articles)
   return (
     <>
       <Head>

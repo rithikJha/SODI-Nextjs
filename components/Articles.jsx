@@ -4,7 +4,7 @@ import { ArticleCard } from '.'
 
 
 const Articles = ({allArticles}) => {
-    console.log('articles',allArticles);
+    
   return (
     <div>
         <div className='cards'> {Array.isArray(allArticles) && allArticles.map((article,index) => 

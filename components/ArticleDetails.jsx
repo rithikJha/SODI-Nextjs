@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ArticleDetails = ({allDetails}) => {
-    console.log('det',allDetails)
+    
   return (
     <div>
         <div className="full-article-container">
