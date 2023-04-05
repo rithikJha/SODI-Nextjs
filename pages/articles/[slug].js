@@ -25,6 +25,7 @@ const FullArticle = ({post, recent_posts}) => {
     if(router.isFallback){
       return <Loader />
     }
+    
   return (
     <div className ="details-page">
     <div className='article-area'>
