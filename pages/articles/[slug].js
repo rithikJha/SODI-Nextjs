@@ -23,7 +23,7 @@ const cats = [
 const FullArticle = ({post, recent_posts}) => {
     const router = useRouter();
     if(router.isFallback){
-      return (<div><Loader /></div>)
+      return <Loader />
     }
   return (
     <div className ="details-page">
